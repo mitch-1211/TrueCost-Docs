@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TrueCost Support</title>
-  <meta name="description" content="Contact TrueCost support.">
 
   <style>
     :root {
@@ -79,11 +78,6 @@
       font-size: 14px;
     }
 
-    input::placeholder,
-    textarea::placeholder {
-      color: rgba(255,255,255,0.4);
-    }
-
     textarea {
       resize: vertical;
       min-height: 120px;
@@ -139,12 +133,12 @@
 
       <label>
         Name
-        <input type="text" name="name" placeholder="Your name" required>
+        <input type="text" name="name" required>
       </label>
 
       <label>
         Email
-        <input type="email" name="email" placeholder="you@email.com" required>
+        <input type="email" name="email" required>
       </label>
 
       <label>
@@ -158,10 +152,10 @@
 
       <label>
         Message
-        <textarea name="message" placeholder="Describe your issue or question…" required></textarea>
+        <textarea name="message" required></textarea>
       </label>
 
-      <!-- Optional: redirect after submit -->
+      <!-- Redirect AFTER successful submit -->
       <input type="hidden" name="_redirect" value="https://mitch-1211.github.io/TrueCost-Docs/support/success.html">
 
       <button type="submit">Send message</button>
