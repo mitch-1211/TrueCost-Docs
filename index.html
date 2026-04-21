@@ -4,17 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TrueCost — Compare the Real Cost of Car Ownership</title>
+
   <meta name="description" content="TrueCost helps you compare the real cost of car ownership and finance options, including loans and novated leases.">
   <meta name="robots" content="index, follow">
+
   <meta property="og:title" content="TrueCost — Compare the Real Cost of Car Ownership">
-  <meta property="og:description" content="Compare the real financial impact of loans, novated leases, and outright ownership with TrueCost.">
+  <meta property="og:description" content="Compare the real financial impact of loans, novated leases, and ownership options with TrueCost.">
   <meta property="og:url" content="https://gettruecost.app/">
   <meta property="og:type" content="website">
 
   <style>
     :root {
       --bg: #081225;
-      --bg-secondary: #0d1b34;
       --card: rgba(255, 255, 255, 0.08);
       --card-border: rgba(255, 255, 255, 0.12);
       --text: #f5f7fb;
@@ -85,49 +86,24 @@
 
     .actions {
       display: flex;
-      gap: 14px;
       justify-content: center;
-      flex-wrap: wrap;
       margin-top: 34px;
     }
 
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-width: 170px;
-      padding: 14px 22px;
-      border-radius: 14px;
-      font-weight: 600;
-      transition: 0.18s ease;
-      border: 1px solid transparent;
+    .appstore-badge {
+      height: 56px;
+      transition: transform 0.15s ease, opacity 0.15s ease;
     }
 
-    .button-primary {
-      background: var(--accent);
-      color: white;
-      min-width: 240px;
-    }
-
-    .button-primary:hover {
-      background: var(--accent-hover);
-    }
-
-    .button-secondary {
-      background: rgba(255, 255, 255, 0.06);
-      border-color: rgba(255, 255, 255, 0.12);
-      color: var(--text);
-    }
-
-    .button-secondary:hover {
-      background: rgba(255, 255, 255, 0.1);
+    .appstore-badge:hover {
+      transform: scale(1.03);
+      opacity: 0.9;
     }
 
     .cta-note {
       margin-top: 14px;
       color: var(--muted);
       font-size: 14px;
-      line-height: 1.5;
     }
 
     .secondary-actions {
@@ -136,6 +112,23 @@
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 18px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--text);
+      transition: 0.18s ease;
+    }
+
+    .button:hover {
+      background: rgba(255, 255, 255, 0.1);
     }
 
     .grid {
@@ -156,7 +149,6 @@
     .card h2 {
       margin: 0 0 10px;
       font-size: 20px;
-      line-height: 1.2;
     }
 
     .card p {
@@ -172,13 +164,10 @@
 
     .section-title {
       font-size: 28px;
-      line-height: 1.2;
-      margin: 0 0 12px;
-      letter-spacing: -0.02em;
+      margin-bottom: 12px;
     }
 
     .section-text {
-      margin: 0;
       color: var(--muted);
       line-height: 1.7;
       font-size: 17px;
@@ -190,7 +179,6 @@
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       display: flex;
       justify-content: space-between;
-      gap: 16px;
       flex-wrap: wrap;
       color: var(--muted);
       font-size: 14px;
@@ -199,7 +187,6 @@
     .footer-links {
       display: flex;
       gap: 18px;
-      flex-wrap: wrap;
     }
 
     .footer-links a:hover {
@@ -211,25 +198,24 @@
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        padding-top: 56px;
-      }
-
       .subtitle {
         font-size: 18px;
       }
 
-      .button-primary {
-        min-width: 100%;
+      .appstore-badge {
+        height: 52px;
       }
     }
   </style>
 </head>
+
 <body>
   <main class="container">
     <section class="hero">
       <div class="badge">TrueCost</div>
+
       <h1>Make smarter car decisions with clarity.</h1>
+
       <p class="subtitle">
         TrueCost helps you compare the real financial impact of car ownership options,
         including loans, novated leases, and outright ownership, so you can understand
@@ -237,13 +223,12 @@
       </p>
 
       <div class="actions">
-        <a
-          class="button button-primary"
-          href="https://apps.apple.com/au/app/truecost/id6762444802"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Download on the App Store
+        <a href="https://apps.apple.com/au/app/truecost/id6762444802" target="_blank" rel="noopener noreferrer">
+          <img
+            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+            alt="Download on the App Store"
+            class="appstore-badge"
+          >
         </a>
       </div>
 
@@ -252,8 +237,8 @@
       </div>
 
       <div class="secondary-actions">
-        <a class="button button-secondary" href="./support/">Support</a>
-        <a class="button button-secondary" href="./privacy/">Privacy Policy</a>
+        <a class="button" href="./support/">Support</a>
+        <a class="button" href="./privacy/">Privacy Policy</a>
       </div>
     </section>
 
@@ -287,8 +272,7 @@
       <h2 class="section-title">About the app</h2>
       <p class="section-text">
         TrueCost is designed to help Australians evaluate vehicle ownership and finance
-        options with more confidence. Rather than relying on simple repayment estimates,
-        it brings together the factors that can materially change the real cost of a decision.
+        options with more confidence.
       </p>
     </section>
 
