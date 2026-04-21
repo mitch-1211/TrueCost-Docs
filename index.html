@@ -1,12 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta name="description" content="TrueCost helps you compare the real cost of car ownership and finance options, including loans and novated leases.">
-  <meta name="robots" content="index, follow">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TrueCost — Compare the Real Cost of Car Ownership</title>
-  <meta name="description" content="TrueCost helps you compare the real cost of car ownership and finance options with clarity.">
+  <meta name="description" content="TrueCost helps you compare the real cost of car ownership and finance options, including loans and novated leases.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="TrueCost — Compare the Real Cost of Car Ownership">
+  <meta property="og:description" content="Compare the real financial impact of loans, novated leases, and outright ownership with TrueCost.">
+  <meta property="og:url" content="https://gettruecost.app/">
+  <meta property="og:type" content="website">
+
   <style>
     :root {
       --bg: #081225;
@@ -102,6 +106,7 @@
     .button-primary {
       background: var(--accent);
       color: white;
+      min-width: 240px;
     }
 
     .button-primary:hover {
@@ -116,6 +121,21 @@
 
     .button-secondary:hover {
       background: rgba(255, 255, 255, 0.1);
+    }
+
+    .cta-note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .secondary-actions {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 18px;
     }
 
     .grid {
@@ -198,6 +218,10 @@
       .subtitle {
         font-size: 18px;
       }
+
+      .button-primary {
+        min-width: 100%;
+      }
     }
   </style>
 </head>
@@ -213,7 +237,22 @@
       </p>
 
       <div class="actions">
-        <a class="button button-primary" href="./support/">Support</a>
+        <a
+          class="button button-primary"
+          href="https://apps.apple.com/au/app/truecost/id6762444802"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Download on the App Store
+        </a>
+      </div>
+
+      <div class="cta-note">
+        Available now on the App Store for iPhone.
+      </div>
+
+      <div class="secondary-actions">
+        <a class="button button-secondary" href="./support/">Support</a>
         <a class="button button-secondary" href="./privacy/">Privacy Policy</a>
       </div>
     </section>
